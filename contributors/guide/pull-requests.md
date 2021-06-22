@@ -563,7 +563,7 @@ Pull requests by Kubernetes organization [members](/community-membership.md) do 
 The behavior of Prow is configurable across projects. You should be aware of the following configurable behaviors.
 
 * If you are listed as an `/approver` in the `OWNERS` file, an implicit `/approve` can be applied to your pull request. This can result in a merge being triggered by a `/lgtm` label. This is the configured behavior in many projects, including `kubernetes/kubernetes`. You can remove the implicit `/approve` with `/approve cancel`
-* `/lgtm` can be configured so that from someone listed as both a `reviewer` and an `approver` will cause both labels to be applied. For `kubernetes/kuebernetes` and many other projects this is _not_ the default behavior, and `/lgtm` is decoupled from `/approve`
+* `/lgtm` can be configured so that from someone listed as both a `reviewer` and an `approver` will cause both labels to be applied. For `kubernetes/kubernetes` and many other projects this is _not_ the default behavior, and `/lgtm` is decoupled from `/approve`
 
 Once the tests pass and the reviewer adds the `lgtm` and `approved` labels, the pull request enters the final merge pool. 
 The merge pool is needed to make sure no incompatible changes have been introduced by other pull requests since the tests were last run on your pull request.
